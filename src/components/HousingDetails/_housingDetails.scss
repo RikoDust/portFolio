@@ -1,0 +1,161 @@
+/* HousingDetails */
+
+@use '../../styles/abstracts/variables';
+
+
+
+.housing-details{
+    margin-bottom: 1rem;
+
+    .housing-header{
+        display: flex;
+
+        .header-left{
+            .housing-title{
+                font-family: variables.$font-primary;
+                color: #00567a;
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .housing-location{
+                margin-top: 0;
+                font-size: 1.2rem;
+            }
+            .tags{
+                margin-left: 0rem;
+                padding-left: 0rem;
+                .tag {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin: 5px;
+                    padding: 5px 10px;
+                    background: linear-gradient(315deg, #00567a, #002230);
+                    color: variables.$white-color;
+                    border-radius: 10px;
+                    min-width: 100px;
+                    text-align: center;
+                    margin-left: 0rem;
+                    margin-right: 8px;
+                }
+            } 
+        }
+        .header-right{
+            margin-left: auto;
+            text-align: right;
+            .host-info{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .host-name{
+                    font-size: 1.1rem;
+                    width: 50%;
+                    color: variables.$red-color;
+                }
+                .host-picture{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .host-rating {
+                display: flex;
+                margin-top: 1rem;
+                gap: 10px;
+                .star {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    .housing-accordions{
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .accordion{
+            width: 580px;
+        }
+        &.open {
+            height: 180px;
+          }
+        ul{
+            list-style: none;
+            padding-left: 0rem;
+            padding-top: 0rem;
+            margin: 0rem;
+        }
+    }
+}
+
+
+
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+    .housing-details{
+        width: calc(100% - 30px);
+        margin: 0 15px;
+        .housing-header{
+            display: flex;
+            flex-direction: column;
+            .header-left{
+                margin-top: 0;
+                .housing-title{
+                    margin-top: 0;
+                    font-size: 1.5rem;
+                }
+                .housing-location{
+                    font-size: 0.9rem;
+                }
+                .tags{
+                    .tag{
+                    font-size: 10px;
+                    min-width: 70px;
+                    }
+                }          
+            }
+            .header-right{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-left: 0rem;
+                .host-info{
+                    margin-top: 0rem;
+                    .host-name{
+                        font-size: 0.9rem;
+                    }
+                    .host-picture{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+                .host-rating{
+                    margin-top: 1.6rem;
+                    .star{
+                       width: 15px;
+                       height: 15px;
+                    }
+                }
+            }
+        }
+        .housing-accordions{
+            margin-top: 0.5rem;
+            flex-direction: column;
+            width: calc(100% - 30px);
+            .accordion{
+                max-width: 380px;
+                font-size: 0.9rem;
+                h3{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/*** base ***/
+
+html{
+  display: flex;
+  justify-content: center;
+}
+
+body{
+    background-color: $white-color;
+    font-family: $font-primary;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+.main-container{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+

@@ -1,0 +1,38 @@
+/*** Footer ***/
+
+@use '../../styles/abstracts/variables';
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(315deg, #00567a, #002230);
+    color: variables.$white-color;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .liens_reseaux{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        i{
+            color: variables.$white-color;
+            font-size: 4rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+
+}

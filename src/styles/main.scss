@@ -1,0 +1,23 @@
+/*** imports ***/
+
+/* base */
+@import '../styles/abstracts/variables';
+@import '../styles/base/base';
+
+
+
+/* components */
+@import '../../src/components/Header/header';
+@import '../../src/components/Banner/banner';
+@import '../../src/components/Footer/footer';
+@import '../../src/components/Error404/error404';
+@import '../../src/components/Accordion/accordion';
+@import '../../src/components/AccordionGroup/accordionGroup';
+@import '../../src/components/Card/card';
+@import '../../src/components/CardGallery/cardGallery';
+@import '../../src/components/Carousel/carousel';
+@import '../../src/components/HousingDetails/housingDetails';
+
+
+
+

@@ -1,0 +1,41 @@
+/*** CardGallery ***/
+
+@use '../../styles/abstracts/variables';
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(315deg, #00567a, #002230);
+    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h2{
+    color: black;
+    margin-bottom: 0;
+}
+
+.card-gallery {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Trois colonnes égales */
+    gap: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    margin-top: 0.5rem;
+}
+
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+    .card-gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 15px;
+        margin: 1rem auto;
+        background-color: variables.$background-color-primary;
+    }
+}

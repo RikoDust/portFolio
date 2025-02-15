@@ -2,6 +2,7 @@
 import Banner from "../components/Banner/Banner";
 import CardGallery from "../components/CardGallery/CardGallery";
 import Form from "../components/Form/Form";
+import Presentation from "../components/Presentation/Presentation";
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner 
                 image="src/assets/images/banner_home.png"
             />
+            <Presentation />
             <section id="projets">
             <CardGallery />
             </section>

@@ -8,9 +8,11 @@ import Presentation from "../components/Presentation/Presentation";
 const Home = () => {
     return (
         <div>
+            <section id="accueil" >
             <Banner 
                 image="src/assets/images/banner_home.png"
             />
+            </section>
             <Presentation />
             <section id="projets">
             <CardGallery />

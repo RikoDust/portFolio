@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom"; 
-import { Link } from "react-router-dom"; 
+
 import '../Header/_header.scss';
-import logo from "../../assets/logos/ep_logo.png";
+
 
 function Header() {
     const location = useLocation();
@@ -33,15 +33,14 @@ function Header() {
 
     return (
       <header className='header'>
-        <div className='logo'>
-            <img src={logo} alt="Logo_RK_studio" />
-        </div>
+        
         <nav className="nav">
-            <Link
-                to="/"
-                className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>
+            <a
+                href="#accueil"
+                className="nav-link"
+                onClick={(e) => handleScroll(e, "accueil")}>
                 Accueil
-            </Link>
+            </a>
             <a
                 href="#projets"
                 className="nav-link"

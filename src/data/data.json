@@ -72,29 +72,6 @@
         ]
     },
     {
-        "id": "7af00cd6",
-        "title": "Riding Cities",
-        "cover": "riding_cities_cover.png",
-        "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
-        ],
-        "description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de découvrir la night-life parisienne à seulement 5 minutes de l'appartement.",
-        "equipments": [
-            "Micro-Ondes",
-            "Wi-fi",
-            "Chambre Séparée",
-            "Climatisation",
-            "Télévision"
-        ],
-        "tags": [
-            "HTML & CSS",
-            "Figma"
-        ]
-    },
-    {
         "id": "0979876d",
         "title": "Sophie Bluel - Architecte",
         "cover": "sophie_bluel_cover.png",

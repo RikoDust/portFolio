@@ -1,21 +1,19 @@
-import PropTypes from "prop-types";
 import '../Banner/_banner.scss';
 
-const Banner = ({ image, text = null }) => { 
+
+const Banner = () => { 
     return (
       <div className="banner">
-        <img src={image} alt={text} className="banner-img"/>
-        {text && <h1>{text}</h1>} 
+        <img src="src/assets/images/banner_home.png" alt="Bannière_presentation" className="banner-img"/>
+        <h1>Emeric Pataut</h1>
       </div>
     );
   };
-  
-  Banner.propTypes = {
-    image: PropTypes.string.isRequired, // image doit être une chaîne de caractères
-    text: PropTypes.string,
-  };
 
 
 
 
-export default Banner
+
+
+
+export default Banner;

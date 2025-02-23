@@ -1,32 +1,49 @@
 import { useParams, Navigate } from 'react-router-dom';
-import Carousel from '../components/Carousel/Carousel';
+import { useEffect } from 'react';
+import ImageDisplay from '../components/ImageDisplay/ImageDisplay';
 import HousingDetails from '../components/HousingDetails/HousingDetails';
 import data from '../../src/data/data.json';
 import '../styles/main.css';
 
 
+
 const HouseDescription = () => {
     const { id } = useParams();
     const accommodation = data.find((item) => item.id === id);
-  
+
+   // Scroll vers le haut de la page lorsque le composant est monté
+   useEffect(() => {
+    window.scrollTo(0, 0);  // Faire défiler la page vers le haut
+}, []); // [] s'assure qu'il ne s'exécute qu'une seule fois au montage
+
+
+
     if (!accommodation) {
-      return <Navigate to="/404" />; // Redirection vers une route inexistante pour afficher page "notFound"
+        return <Navigate to="/404" />;
     }
+   
 
-    // Ajoute PUBLIC_URL uniquement aux images locales
-    const formattedPictures = accommodation.pictures.map((picture) =>
-      picture.startsWith('http') ? picture : `${import.meta.env.BASE_URL}/images/booki/${picture.replace(/^\/?images\/booki\//, '')}`
-  );
+    // Récupération de la première image locale
+    const firstPicture = accommodation.pictures && accommodation.pictures.length > 0 
+      ? `/${accommodation.pictures[0]}`
+      : '';
 
+    console.log('Image affichée:', firstPicture);
+
+ 
 
 
     return (
-    <div>
-        <Carousel pictures={formattedPictures} />
-        <HousingDetails title={accommodation.title} location={accommodation.location} 
-         host={accommodation.host} tags={accommodation.tags} rating={accommodation.rating}
-         description={accommodation.description} equipments={accommodation.equipments} /> 
-    </div>
+        <div>
+            <ImageDisplay picture={firstPicture} />
+            <HousingDetails 
+                title={accommodation.title} 
+                host={accommodation.host} 
+                tags={accommodation.tags} 
+                description={accommodation.description} 
+                equipments={accommodation.equipments} 
+            /> 
+        </div>
     );
 };
 
@@ -34,5 +51,5 @@ const HouseDescription = () => {
 
 
 
-
 export default HouseDescription;
+

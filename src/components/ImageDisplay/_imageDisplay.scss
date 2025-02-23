@@ -1,0 +1,40 @@
+/*** carousel ***/
+
+@use '../../styles/abstracts/variables';
+
+
+.image-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px; 
+    overflow: hidden;
+    border: 2px solid #00567a;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayed-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; 
+    border-radius: 10px;
+}
+
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+
+}
+

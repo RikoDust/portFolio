@@ -6,7 +6,7 @@
         "pictures": [
             "booki_desktop.png"
         ],
-        "description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+        "description": "Développement d’un site permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Déploiement d’un site singlePage selon une maquette fournie. Respect des différents affichages selon écran.",
         "equipments": [
             "Gestion du responsive (Desktop, tablette et mobile)",
             "Intégrer du contenu conformément à une maquette"
@@ -24,14 +24,13 @@
         "pictures": [
             "ohmyfood_desktop.png"
         ],
-        "description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+        "description": "Développement d’un site en « mobile first », permettant aux clients de composer le menu de leur repas et de réserver avant leur arrivée. Déploiement d’un site muti Pages, avec animations et gestion du responsive conformément à la maquette et au prototype fournis.",
         "equipments": [
-            "Parking",
-            "Sèche Cheveux",
-            "Machine à laver",
-            "Wi-fi",
-            "Cuisine équipée",
-            "Télévision"
+            "Gestion du responsive (Desktop, tablette et mobile)",
+            "Intégrer du contenu conformément à une maquette",
+            "Intégration d’animations (loader, cœur a cocher, sélection plat)",
+            "Gestion de version de projet avec Git et GitHub",
+            "Utilisation du pré-processeur Sass"
         ],
         "tags": [
             "HTML & CSS",
@@ -47,12 +46,10 @@
         "pictures": [
             "print_it_carrousel.png"
         ],
-        "description": "À seulement deux pas des Buttes Chaumont, venez découvrir Paris dans ce studio tout équipé. Entièrement équipé pour votre confort et élégamment décoré, il vous permettra de vivre comme un Parisien le temps de votre séjour.",
+        "description": "Dynamiser le site internet statique d'une imprimerie en y ajoutant un carrousel interactif. Gestion de la navigation du carrousel depuis les flèches latérales cliquable mais également depuis les « dots » de celui-ci.",
         "equipments": [
-            "Wi-fi",
-            "Cuisine équipée",
-            "Télévision",
-            "Sèche Cheveux"
+            "Intégration d’un carrousel JS",
+            "Transformer un site statique en site dynamique"
         ],
         "tags": [
             "JavaScript",
@@ -66,13 +63,12 @@
         "pictures": [
             "Sophie_bluel_desktop.png"
         ],
-        "description": "Ce loft entièrement rénové, et équipé de meubles de luxe saura vous séduire. Idéalement situé dans le 10ème arrondissement, vous déplacer dans Paris sera un véritable jeu d'enfant.",
+        "description": "Présentation des travaux de l’architecte avec gestion de filtres. Création d’un espace de connexion vers un mode édition ainsi qu'une modal pour la gestion de la suppression et d'ajout de projet",
         "equipments": [
-            "Frigo Américain",
-            "Sèche Cheveux",
-            "Wi-fi",
-            "Chambre Séparée",
-            "Parking"
+            "Gestion de données",
+            "Gestion du DOM",
+            "Requêtes API",
+            "Déploiement d’une modal"
         ],
         "tags": [
             "JavaScript",
@@ -87,10 +83,10 @@
         "pictures": [
             "kasa_desktop.png"
         ],
-        "description": "Venez vous imprégner de la culture parisienne dans cet ancien studio d'artiste décoré avec goût, au coeur de Montmartre.",
+        "description": "Développement d'un site de reservation d'herbergement",
         "equipments": [
-            "Chambre Séparée",
-            "Parking"
+            "Développement d'application React",
+            "Gestion de données"
         ],
         "tags": [
             "React",

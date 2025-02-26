@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 650px;
     border-radius: 20px;
     margin-top: 0.5rem;
     margin-bottom: 3rem;
@@ -75,7 +75,7 @@
         border: none;
         padding: 10px;
         border-radius: 20px;
-        width: 90%;
+        width: 70%;
         height: 2.5rem;
         cursor: pointer;
         transition: 0.3s;
@@ -87,9 +87,51 @@
             background-color: #00567a;
             color: white;
             transform: scale(1.1);
+            box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
         }
       }
     }
   }
+
+
+// Modal de confirmation d'envoi
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+  }
+      .modal-content p {
+      margin-bottom: 10px;
+  }
+      .modal-content button {
+      background-color: #00567a;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+      .modal-content button:hover {
+      background-color: #002230;
+  }
+}
+
+
+
+
+
+
 
 

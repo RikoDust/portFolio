@@ -38,13 +38,11 @@ const HousingDetails = ({ title, tags, description, equipments }) => {
 
 HousingDetails.propTypes = {
     title: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     host: PropTypes.shape({
         name: PropTypes.string,
         picture: PropTypes.string,
     }),
-    rating: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
   };

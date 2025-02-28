@@ -28,7 +28,8 @@ const HouseDescription = () => {
       ? `/${accommodation.pictures[0]}`
       : '';
 
-    console.log('Image affichée:', firstPicture);
+      
+    // console.log('Image affichée:', firstPicture);
 
  
 
@@ -37,6 +38,7 @@ const HouseDescription = () => {
         <div>
             <ImageDisplay picture={firstPicture} />
             <HousingDetails 
+                id={accommodation.id} 
                 title={accommodation.title} 
                 host={accommodation.host} 
                 tags={accommodation.tags} 

@@ -17,7 +17,7 @@ const CardGallery = () => {
                 {projects.map((project) => (
                     <Card key={project.id} id={project.id} title={project.title} cover={project.cover} />
                 ))}
-                <a href='https://github.com/RikoDust' target='_blank' rel='noopener noreferrer' className='card'>
+                <a href='https://github.com/RikoDust?tab=repositories' target='_blank' rel='noopener noreferrer' className='card'>
                     <img src="public/images/cover/github_card_cover.png" alt="github_card_cover" className="github_cover"></img>
                 </a>
             </div>

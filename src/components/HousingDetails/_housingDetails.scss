@@ -1,28 +1,27 @@
 /* HousingDetails */
-
 @use '../../styles/abstracts/variables';
 
 
-
-.housing-details{
+.housing-details {
     margin-bottom: 1rem;
 
-    .housing-header{
+    .housing-header {
         display: flex;
+        justify-content: space-between;
 
-        .header-left{
-            .housing-title{
+        .header-left {
+            .housing-title {
                 font-family: variables.$font-primary;
                 color: #00567a;
                 font-size: 2.5rem;
                 font-weight: bold;
                 margin-bottom: 5px;
             }
-            .housing-location{
+            .housing-location {
                 margin-top: 0;
                 font-size: 1.2rem;
             }
-            .tags{
+            .tags {
                 margin-left: 0rem;
                 padding-left: 0rem;
                 .tag {
@@ -39,52 +38,58 @@
                     margin-left: 0rem;
                     margin-right: 8px;
                 }
-            } 
-        }
-        .header-right{
-            margin-left: auto;
-            text-align: right;
-            .host-info{
-                margin-top: 1rem;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                .host-name{
-                    font-size: 1.1rem;
-                    width: 50%;
-                    color: variables.$red-color;
-                }
-                .host-picture{
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50%;
-                    background-size: cover;
-                    background-position: center;
-                }
             }
-            .host-rating {
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .links-container {
                 display: flex;
-                margin-top: 1rem;
-                gap: 10px;
-                .star {
-                    width: 24px;
-                    height: 24px;
-                }
+                margin-top: 2rem;
+                margin-right: 2rem;
+                gap: 4rem; /* Espacement entre les liens */
+            }
+
+            .project-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: #002230;
+                font-size: 14px;
+                transition: color 0.3s, transform 0.3s ease;
+            }
+
+            .project-link i {
+                font-size: 3.5rem;
+                margin-bottom: 5px;
+            }
+
+            .project-link:hover {
+                transform: scale(1.1);
+                color: #00567a;
             }
         }
     }
-    .housing-accordions{
+
+    .housing-accordions {
         margin-top: 1.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .accordion{
+
+        .accordion {
             width: 580px;
         }
+
         &.open {
             height: 180px;
-          }
-        ul{
+        }
+
+        ul {
             list-style: none;
             padding-left: 0rem;
             padding-top: 0rem;
@@ -93,69 +98,72 @@
     }
 }
 
-
-
-
-
-/* Media Query "mobile"  (720px ou moins) */
+/* Media Query "mobile" (720px ou moins) */
 @media (max-width: 720px) {
-    .housing-details{
+    .housing-details {
         width: calc(100% - 30px);
         margin: 0 15px;
-        .housing-header{
+
+        .housing-header {
             display: flex;
             flex-direction: column;
-            .header-left{
+
+            .header-left {
                 margin-top: 0;
-                .housing-title{
+
+                .housing-title {
                     margin-top: 0;
                     font-size: 1.5rem;
                 }
-                .housing-location{
+
+                .housing-location {
                     font-size: 0.9rem;
                 }
-                .tags{
-                    .tag{
-                    font-size: 10px;
-                    min-width: 70px;
-                    }
-                }          
-            }
-            .header-right{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-                margin-left: 0rem;
-                .host-info{
-                    margin-top: 0rem;
-                    .host-name{
-                        font-size: 0.9rem;
-                    }
-                    .host-picture{
-                        width: 35px;
-                        height: 35px;
+
+                .tags {
+                    .tag {
+                        font-size: 10px;
+                        min-width: 70px;
                     }
                 }
-                .host-rating{
-                    margin-top: 1.6rem;
-                    .star{
-                       width: 15px;
-                       height: 15px;
-                    }
+            }
+
+            .header-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: center; /* Centrage sur mobile */
+                margin-top: 0;
+
+                .links-container {
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .project-link i {
+                    font-size: 2.5rem;
+                }
+
+                .project-link span {
+                    font-size: 12px;
                 }
             }
         }
-        .housing-accordions{
+
+        .housing-accordions {
             margin-top: 0.5rem;
             flex-direction: column;
             width: calc(100% - 30px);
-            .accordion{
+
+            .accordion {
                 max-width: 380px;
                 font-size: 0.9rem;
-                h3{
+
+                h3 {
                     font-size: 1rem;
                 }
             }
         }
     }
 }
+

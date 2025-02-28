@@ -445,6 +445,7 @@ h2 {
 }
 .housing-details .housing-header {
   display: flex;
+  justify-content: space-between;
 }
 .housing-details .housing-header .header-left .housing-title {
   font-family: "Montserrat", sans-serif;
@@ -476,35 +477,32 @@ h2 {
   margin-right: 8px;
 }
 .housing-details .housing-header .header-right {
-  margin-left: auto;
-  text-align: right;
-}
-.housing-details .housing-header .header-right .host-info {
-  margin-top: 1rem;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  gap: 10px;
 }
-.housing-details .housing-header .header-right .host-info .host-name {
-  font-size: 1.1rem;
-  width: 50%;
-  color: #FF6060;
-}
-.housing-details .housing-header .header-right .host-info .host-picture {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-}
-.housing-details .housing-header .header-right .host-rating {
+.housing-details .housing-header .header-right .links-container {
   display: flex;
-  margin-top: 1rem;
-  gap: 10px;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  gap: 4rem; /* Espacement entre les liens */
 }
-.housing-details .housing-header .header-right .host-rating .star {
-  width: 24px;
-  height: 24px;
+.housing-details .housing-header .header-right .project-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #002230;
+  font-size: 14px;
+  transition: color 0.3s, transform 0.3s ease;
+}
+.housing-details .housing-header .header-right .project-link i {
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+}
+.housing-details .housing-header .header-right .project-link:hover {
+  transform: scale(1.1);
+  color: #00567a;
 }
 .housing-details .housing-accordions {
   margin-top: 1.5rem;
@@ -525,7 +523,7 @@ h2 {
   margin: 0rem;
 }
 
-/* Media Query "mobile"  (720px ou moins) */
+/* Media Query "mobile" (720px ou moins) */
 @media (max-width: 720px) {
   .housing-details {
     width: calc(100% - 30px);
@@ -551,26 +549,20 @@ h2 {
   }
   .housing-details .housing-header .header-right {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-left: 0rem;
+    flex-direction: row;
+    justify-content: center; /* Centrage sur mobile */
+    margin-top: 0;
   }
-  .housing-details .housing-header .header-right .host-info {
-    margin-top: 0rem;
+  .housing-details .housing-header .header-right .links-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
-  .housing-details .housing-header .header-right .host-info .host-name {
-    font-size: 0.9rem;
+  .housing-details .housing-header .header-right .project-link i {
+    font-size: 2.5rem;
   }
-  .housing-details .housing-header .header-right .host-info .host-picture {
-    width: 35px;
-    height: 35px;
-  }
-  .housing-details .housing-header .header-right .host-rating {
-    margin-top: 1.6rem;
-  }
-  .housing-details .housing-header .header-right .host-rating .star {
-    width: 15px;
-    height: 15px;
+  .housing-details .housing-header .header-right .project-link span {
+    font-size: 12px;
   }
   .housing-details .housing-accordions {
     margin-top: 0.5rem;

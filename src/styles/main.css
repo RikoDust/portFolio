@@ -238,7 +238,7 @@ h2 {
 /* polices */
 /*** Accordion ***/
 .accordion {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   border: none;
   overflow: hidden;
 }
@@ -276,9 +276,11 @@ h2 {
   padding: 0 15px;
   background-color: #FFFFFF;
   border: none;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .accordion-content.open {
-  max-height: 200px;
+  max-height: 160px;
   padding: 15px;
 }
 
@@ -292,10 +294,6 @@ h2 {
   }
   .accordion-header h3 {
     font-size: 1rem;
-  }
-  .accordion-header .arrow {
-    width: 16px;
-    height: 16px;
   }
 }
 /*** variables ***/
@@ -417,6 +415,8 @@ h2 {
   border: 2px solid #00567a;
   border-radius: 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .image-container {

@@ -36,7 +36,6 @@ const HouseDescription = () => {
 
     return (
         <div>
-            <ImageDisplay picture={firstPicture} />
             <HousingDetails 
                 id={accommodation.id} 
                 title={accommodation.title} 
@@ -45,6 +44,7 @@ const HouseDescription = () => {
                 description={accommodation.description} 
                 equipments={accommodation.equipments} 
             /> 
+            <ImageDisplay picture={firstPicture} />
         </div>
     );
 };

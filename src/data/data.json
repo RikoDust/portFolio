@@ -28,7 +28,7 @@
         "equipments": [
             "Gestion du responsive (Desktop, tablette et mobile)",
             "Intégrer du contenu conformément à une maquette",
-            "Intégration d’animations (loader, cœur a cocher, sélection plat)",
+            "Intégration d’animations",
             "Gestion de version de projet avec Git et GitHub",
             "Utilisation du pré-processeur Sass"
         ],
@@ -83,14 +83,18 @@
         "pictures": [
             "kasa_desktop.png"
         ],
-        "description": "Développement d'un site de reservation d'herbergement",
+        "description": "Développement d'un site responsive de location immobilière par composants avec React et Vite. Gestion des données depuis un fichier JSON. Gestion de la navigation avec React Router",
         "equipments": [
             "Développement d'application React",
-            "Gestion de données"
+            "Gestion de données",
+            "Utilisation de Node.js",
+            "Utilisation de React Router"
         ],
         "tags": [
             "React",
-            "Sass"
+            "Sass",
+            "Vite",
+            "Node.js"
         ]
     }
 ]

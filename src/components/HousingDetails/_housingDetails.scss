@@ -110,6 +110,7 @@
 
             .header-left {
                 margin-top: 0;
+                text-align: center;
 
                 .housing-title {
                     margin-top: 0;
@@ -121,8 +122,10 @@
                 }
 
                 .tags {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
                     .tag {
-                        font-size: 10px;
+                        font-size: 12px;
                         min-width: 70px;
                     }
                 }
@@ -131,21 +134,22 @@
             .header-right {
                 display: flex;
                 flex-direction: row;
-                justify-content: center; /* Centrage sur mobile */
+                justify-content: center;
                 margin-top: 0;
+                margin-bottom: 1rem;
 
                 .links-container {
                     flex-direction: row;
                     align-items: center;
-                    gap: 10px;
+                    gap: 4rem;
                 }
 
                 .project-link i {
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
                 }
 
                 .project-link span {
-                    font-size: 12px;
+                    font-size: 15px;
                 }
             }
         }

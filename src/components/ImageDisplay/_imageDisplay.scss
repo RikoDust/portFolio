@@ -37,6 +37,18 @@
 
 /* Media Query "mobile"  (720px ou moins) */
 @media (max-width: 720px) {
+    .image-display {
+        height: auto; /* Permet à la hauteur de s'ajuster au contenu */
+        max-height: 400px; /* Limite la hauteur de l'affichage */
+    }
 
+    .displayed-image {
+        width: 100%;
+        height: auto; /* Garde le ratio de l'image sans déborder */
+        object-fit: contain; /* Assure que l'image reste visible sans être rognée */
+    }
 }
+
+
+
 

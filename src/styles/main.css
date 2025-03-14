@@ -267,9 +267,9 @@ h2 {
   transform: rotate(-180deg);
 }
 .accordion-content {
-  max-height: 0; /* initialement caché */
+  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease; /* animation expansion */
+  transition: max-height 0.4s ease, padding 0.4s ease;
   padding: 0 15px;
   background-color: #FFFFFF;
   border: none;
@@ -291,6 +291,10 @@ h2 {
   }
   .accordion-header h3 {
     font-size: 1rem;
+  }
+  .accordion-content.open {
+    max-height: 180px;
+    padding: 10px;
   }
 }
 /*** variables ***/
@@ -453,6 +457,17 @@ h2 {
 }
 
 /* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .image-display {
+    height: auto; /* Permet à la hauteur de s'ajuster au contenu */
+    max-height: 400px; /* Limite la hauteur de l'affichage */
+  }
+  .displayed-image {
+    width: 100%;
+    height: auto; /* Garde le ratio de l'image sans déborder */
+    object-fit: contain; /* Assure que l'image reste visible sans être rognée */
+  }
+}
 /*** variables ***/
 /* couleurs */
 /* polices */
@@ -552,6 +567,7 @@ h2 {
   }
   .housing-details .housing-header .header-left {
     margin-top: 0;
+    text-align: center;
   }
   .housing-details .housing-header .header-left .housing-title {
     margin-top: 0;
@@ -560,26 +576,31 @@ h2 {
   .housing-details .housing-header .header-left .housing-location {
     font-size: 0.9rem;
   }
+  .housing-details .housing-header .header-left .tags {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
   .housing-details .housing-header .header-left .tags .tag {
-    font-size: 10px;
+    font-size: 12px;
     min-width: 70px;
   }
   .housing-details .housing-header .header-right {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centrage sur mobile */
+    justify-content: center;
     margin-top: 0;
+    margin-bottom: 1rem;
   }
   .housing-details .housing-header .header-right .links-container {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 4rem;
   }
   .housing-details .housing-header .header-right .project-link i {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .housing-details .housing-header .header-right .project-link span {
-    font-size: 12px;
+    font-size: 15px;
   }
   .housing-details .housing-accordions {
     margin-top: 0.5rem;

@@ -40,9 +40,9 @@
   }
 
   &-content {
-    max-height: 0; /* initialement caché */
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease; /* animation expansion */
+    transition: max-height 0.4s ease, padding 0.4s ease; 
     padding: 0 15px;
     background-color: variables.$white-color;
     border: none;
@@ -60,13 +60,22 @@
 
 /* Media Query "mobile"  (720px ou moins) */
 @media (max-width: 720px) {
-  .accordion{
-    margin-bottom: 2rem;
-    &-header{
-      padding: 10px;
-      h3{
-        font-size: 1rem;
+    .accordion {
+      margin-bottom: 2rem;
+      
+      &-header {
+        padding: 10px;
+        
+        h3 {
+          font-size: 1rem;
+        }
+      }
+      
+      &-content {
+        &.open {
+          max-height: 180px;
+          padding: 10px;
+        }
       }
     }
   }
-}

@@ -53,20 +53,17 @@
 @media (max-width: 720px) {
    
     .header {
-        margin: 0 16px;
-        padding: 1rem 0rem;
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
+        padding: 0;
         .logo {
             img {
                 height: 48px;
             }
         }
         .nav {
-            width: 145px;
-            margin-right: 15px;
+            gap: 1rem;
             .nav-link{
-                font-size: 0.8rem;
+                justify-content: space-around;
+                font-size: 1.2rem;
                 text-transform: uppercase;
             }
         }

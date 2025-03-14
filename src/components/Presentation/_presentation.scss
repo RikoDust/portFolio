@@ -65,5 +65,13 @@
 
 
 
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+    .presentation-container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 2rem;
+    }
 
 
+}

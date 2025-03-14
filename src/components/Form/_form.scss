@@ -131,7 +131,25 @@
 
 
 
-
-
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .form-container{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    .contact-form{
+      width: 90%;
+      form {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        input,
+        textarea {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
 
 

@@ -75,20 +75,17 @@ h2 {
 /* Media Query "mobile"  (720px ou moins) */
 @media (max-width: 720px) {
   .header {
-    margin: 0 16px;
-    padding: 1rem 0rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 0;
   }
   .header .logo img {
     height: 48px;
   }
   .header .nav {
-    width: 145px;
-    margin-right: 15px;
+    gap: 1rem;
   }
   .header .nav .nav-link {
-    font-size: 0.8rem;
+    justify-content: space-around;
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
 }
@@ -136,11 +133,11 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 130px;
-    width: calc(100% - 30px);
+    width: 100%;
     font-size: 0.85rem;
     font-weight: bold;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 20px;
   }
   .banner-img {
     width: 100%;
@@ -150,7 +147,7 @@ h2 {
     margin: auto;
     font-size: 1.45rem;
     width: 60%;
-    margin-left: 20px;
+    margin-left: 55px;
   }
 }
 /*** variables ***/
@@ -391,14 +388,34 @@ h2 {
   border-radius: 4px;
 }
 
-/* Media Query "mobile"  (720px ou moins) */
-@media (max-width: 720px) {
-  .card-gallery {
+/* Media Query "mobile"  (770px ou moins) */
+@media (max-width: 770px) {
+  .project-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .project-container .card-gallery {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 15px;
     margin: 1rem auto;
-    background-color: #FFFFFF;
+  }
+  .project-container .card-gallery .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .project-container .card-gallery .github_cover {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+}
+/* Media Query "tablette"  (1145px ou moins) */
+@media (max-width: 1145px) {
+  .card-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*** variables ***/

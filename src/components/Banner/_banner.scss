@@ -47,11 +47,11 @@
     align-items: center;
     justify-content: center;
     height: 130px;
-    width: calc(100% - 30px);
+    width: calc(100% );
     font-size: 0.85rem;
     font-weight: bold;
     margin : 0 auto;
-    border-radius: 10px;
+    border-radius: 20px;
     
     &-img {
       width: 100%;
@@ -63,7 +63,7 @@
       margin: auto;
       font-size: 1.45rem;
       width: 60%;
-      margin-left: 20px;
+      margin-left: 55px;
     }
   }
 

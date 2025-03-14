@@ -20,8 +20,8 @@ const Presentation = () => {
         </article>
 
         <a
-          href="public/Emeric_Pataut_CV.pdf"
-          target="_blanck"
+          href="/Emeric_Pataut_CV.pdf"
+          target="_blank"
           className="lien-cv"
         >
           Voir mon CV

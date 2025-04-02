@@ -4,7 +4,8 @@
         "title": "BOOKI",
         "cover": "booki_cover.png",
         "pictures": [
-            "booki_desktop.png"
+            "booki_desktop.png",
+            "booki_mobile.png"
         ],
         "description": "Développement d’un site permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Déploiement d’un site singlePage selon une maquette fournie. Respect des différents affichages selon écran.",
         "equipments": [
@@ -22,7 +23,8 @@
         "title": "OH MY FOOD",
         "cover": "ohmyfood_cover.png",
         "pictures": [
-            "ohmyfood_desktop.png"
+            "ohmyfood_desktop.png",
+            "ohmyfood_mobile.png"
         ],
         "description": "Développement d’un site en « mobile first », permettant aux clients de composer le menu de leur repas et de réserver avant leur arrivée. Déploiement d’un site muti Pages, avec animations et gestion du responsive conformément à la maquette et au prototype fournis.",
         "equipments": [
@@ -44,7 +46,8 @@
         "title": "PRINT IT",
         "cover": "printit_cover.png",
         "pictures": [
-            "print_it_carrousel.png"
+            "print_it_carrousel.png",
+            "print_it_carrousel_mobile.png"
         ],
         "description": "Dynamiser le site internet statique d'une imprimerie en y ajoutant un carrousel interactif. Gestion de la navigation du carrousel depuis les flèches latérales cliquable mais également depuis les « dots » de celui-ci.",
         "equipments": [
@@ -58,22 +61,24 @@
     },
     {
         "id": "0979876d",
-        "title": "Sophie Bluel - Architecte",
-        "cover": "sophie_bluel_cover.png",
+        "title": "Nina Carducci - Photographe",
+        "cover": "nina_carducci_cover.png",
         "pictures": [
-            "Sophie_bluel_desktop.png"
+            "nina_carducci_desktop.png",
+            "nina_carducci_mobile.png"
+
         ],
-        "description": "Présentation des travaux de l’architecte avec gestion de filtres. Création d’un espace de connexion vers un mode édition ainsi qu'une modal pour la gestion de la suppression et d'ajout de projet",
+        "description": "Réalisation d’un audit d’optimisation portant sur la performance, l’accessibilité et le référencement.  Utilisation des outils Lighthouse et Wave.  Optimisation globale du site tant sur les performances que sur le SEO, ajout de metas pour les réseaux sociaux, optimisation de l’accessibilité et mise en place du référencement local avec Schema.org.",
         "equipments": [
-            "Gestion de données",
-            "Gestion du DOM",
-            "Requêtes API",
-            "Déploiement d’une modal"
+            "Optimissation",
+            "Audit de site web",
+            "Référencement",
+            "Etablissement d'un rapport d'optimisation"
         ],
         "tags": [
-            "JavaScript",
-            "Gestion du DOM",
-            "Requettes API"
+            "Optimisation",
+            "Accessibilité",
+            "Référencement SEO"
         ]
     },
     {
@@ -81,7 +86,8 @@
         "title": "Kasa",
         "cover": "kasa_cover.png",
         "pictures": [
-            "kasa_desktop.png"
+            "kasa_desktop.png",
+            "kasa_mobile.png"
         ],
         "description": "Développement d'un site responsive de location immobilière par composants avec React et Vite. Gestion des données depuis un fichier JSON. Gestion de la navigation avec React Router",
         "equipments": [

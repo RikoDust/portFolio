@@ -11,27 +11,24 @@ const HouseDescription = () => {
     const { id } = useParams();
     const accommodation = data.find((item) => item.id === id);
 
-   // Scroll vers le haut de la page lorsque le composant est monté
-   useEffect(() => {
-    window.scrollTo(0, 0);  // Faire défiler la page vers le haut
-}, []); // [] s'assure qu'il ne s'exécute qu'une seule fois au montage
-
-
+    // Scroll vers le haut de la page lorsque le composant est monté
+    useEffect(() => {
+        window.scrollTo(0, 0);  
+    }, []);
 
     if (!accommodation) {
         return <Navigate to="/404" />;
     }
-   
 
-    // Récupération de la première image locale
-    const firstPicture = accommodation.pictures && accommodation.pictures.length > 0 
-      ? `/${accommodation.pictures[0]}`
+    // Récupération des images pour desktop et mobile
+    const firstPictureDesktop = accommodation.pictures && accommodation.pictures.length > 0 
+      ? `/${accommodation.pictures[0]}` 
       : '';
 
-      
-    // console.log('Image affichée:', firstPicture);
+    const firstPictureMobile = accommodation.pictures && accommodation.pictures.length > 1 
+      ? `/${accommodation.pictures[1]}`  // Deuxième image si dispo
+      : firstPictureDesktop; // Fallback sur la même image si pas d'image mobile
 
- 
 
 
     return (
@@ -44,14 +41,14 @@ const HouseDescription = () => {
                 description={accommodation.description} 
                 equipments={accommodation.equipments} 
             /> 
-            <ImageDisplay picture={firstPicture} />
+            <ImageDisplay 
+                desktopPicture={firstPictureDesktop} 
+                mobilePicture={firstPictureMobile} 
+            />
         </div>
     );
 };
 
 
 
-
-
 export default HouseDescription;
-

@@ -10,7 +10,7 @@ const Card = ({ id, title, cover }) => {
     const imagePath = `/images/cover/${cover}`;
 
     const handleClick = () => {
-        navigate(`/logement/${id}`); // structure de l'URL avec l'ID passé en prop
+        navigate(`/project/${id}`); // structure de l'URL avec l'ID passé en prop
     };
 
     return (

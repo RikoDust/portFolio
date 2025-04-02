@@ -19,7 +19,7 @@ function RoutesComponent() {
                 <Header />
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/logement/:id" element={<HouseDescription />} />
+                        <Route path="/project/:id" element={<HouseDescription />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                     <Footer />

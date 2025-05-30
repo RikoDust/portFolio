@@ -53,6 +53,13 @@ function Header() {
                 onClick={(e) => handleScroll(e, "contact")}>
                 Contact
             </a>
+            <a
+                href="https://blog-pi-eight-5sppfyd7b5.vercel.app"
+                className="nav-link"
+                target="_blank" 
+                rel="noopener noreferrer">
+                Blog
+            </a>
         </nav>
       </header>
     );

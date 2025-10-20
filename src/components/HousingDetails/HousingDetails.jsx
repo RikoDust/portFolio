@@ -19,8 +19,8 @@ const projectLinks = {
         website: "https://rikodust.github.io/Site_Print_It/"
     },
     "0979876d": {
-        repo: "https://github.com/RikoDust/Site_Nina_Carducci",
-        website: "https://rikodust.github.io/Site_Nina_Carducci/"
+        repo: "https://github.com/RikoDust/Presentation",
+        website: "https://www.sophronath-77.fr/"
     },
     "f72a452f": {
         repo: "https://github.com/RikoDust/Site_Kasa",

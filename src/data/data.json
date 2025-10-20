@@ -61,24 +61,23 @@
     },
     {
         "id": "0979876d",
-        "title": "Nina Carducci - Photographe",
-        "cover": "nina_carducci_cover.webp",
+        "title": "Sophronath - sophrologue",
+        "cover": "sophronath_cover.webp",
         "pictures": [
-            "nina_carducci_desktop.webp",
-            "nina_carducci_mobile.webp"
+            "sophronath_desktop.webp",
+            "sophronath_mobile.webp"
 
         ],
-        "description": "Réalisation d’un audit d’optimisation portant sur la performance, l’accessibilité et le référencement.  Utilisation des outils Lighthouse et Wave.  Optimisation globale du site tant sur les performances que sur le SEO, ajout de metas pour les réseaux sociaux, optimisation de l’accessibilité et mise en place du référencement local avec Schema.org.",
+        "description": "Accompagnement d’un client dans le développement de son site web. Projet réalisé avec React. Une page principale comprenant plusieurs sections et un formulaire de contact. Création de plusieurs pages annexes, intégration de liens vers les réseaux sociaux et de liens de paiement via Stripe.",
         "equipments": [
-            "Optimissation",
-            "Audit de site web",
-            "Référencement",
-            "Etablissement d'un rapport d'optimisation"
+            "Défis du projet :",
+            "Réalisation d’une mise en page avec une image centrale et des paragraphes disposés en cercle autour de celle-ci",
+            "Intégration de liens de paiement Stripe",
+            "Accompagnement du client en tant que freelance"
         ],
         "tags": [
-            "Optimisation",
-            "Accessibilité",
-            "Référencement SEO"
+            "React",
+            "Projet client"
         ]
     },
     {

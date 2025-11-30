@@ -43,20 +43,21 @@
     },
     {
         "id": "46d188c5",
-        "title": "PRINT IT",
-        "cover": "printit_cover.webp",
+        "title": "Simpl'Games",
+        "cover": "SG_cover.png",
         "pictures": [
-            "print_it_carrousel.webp",
-            "print_it_carrousel_mobile.webp"
+            "SG_desktop.png",
+            "SG_mobile.png"
         ],
-        "description": "Dynamiser le site internet statique d'une imprimerie en y ajoutant un carrousel interactif. Gestion de la navigation du carrousel depuis les flèches latérales cliquable mais également depuis les « dots » de celui-ci.",
+        "description": "Création d’un site présentant des mini-jeux développés uniquement en HTML, CSS et JavaScript, pour le plaisir de créer et de partager. Développer ces mini-jeux m’oblige à gérer des événements, à structurer des mécaniques de jeu et à réfléchir en termes d’interactions et de retours pour l’utilisateur.",
         "equipments": [
-            "Intégration d’un carrousel JS",
-            "Transformer un site statique en site dynamique"
+            "Développement d'un projet React",
+            "Travail de logique JavaScript",
+            "Travail de design inspiration retro"
         ],
         "tags": [
             "JavaScript",
-            "Git & Github"
+            "React"
         ]
     },
     {

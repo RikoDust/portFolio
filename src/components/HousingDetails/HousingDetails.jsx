@@ -15,8 +15,8 @@ const projectLinks = {
         website: "https://rikodust.github.io/Site_Oh_My_Food/"
     },
     "46d188c5": {
-        repo: "https://github.com/RikoDust/Site_Print_It",
-        website: "https://rikodust.github.io/Site_Print_It/"
+        repo: "https://github.com/RikoDust/simplgames",
+        website: "https://simplgames.vercel.app/"
     },
     "0979876d": {
         repo: "https://github.com/RikoDust/Presentation",

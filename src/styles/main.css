@@ -81,11 +81,11 @@ h2 {
     height: 48px;
   }
   .header .nav {
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .header .nav .nav-link {
     justify-content: space-around;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
   }
 }

@@ -7,8 +7,8 @@ import Accordion from '../Accordion/Accordion';
 // Mapping des IDs aux liens GitHub et sites en ligne
 const projectLinks = {
     "c67ab8a7": {
-        repo: "https://github.com/RikoDust/Site_Booki",
-        website: "https://rikodust.github.io/Site_Booki/"
+        repo: "https://github.com/RikoDust/DSN",
+        website: "https://rikodust.github.io/DSN/"
     },
     "b9123946": {
         repo: "https://github.com/RikoDust/Site_Oh_My_Food",

@@ -1,20 +1,21 @@
 [
     {
         "id": "c67ab8a7",
-        "title": "BOOKI",
-        "cover": "booki_cover.webp",
+        "title": "DAY'S NOTES",
+        "cover": "daysnotes_cover.png",
         "pictures": [
-            "booki_desktop.webp",
-            "booki_mobile.webp"
+            "dsn_desktop.png",
+            "dsn_mobile.png"
         ],
-        "description": "Développement d’un site permettant aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Déploiement d’un site singlePage selon une maquette fournie. Respect des différents affichages selon écran.",
+        "description": "Développement d'une application web de prise de notes en mobile first. Intéraction depuis les notes; partage, appel, mail, ajout agenda et lancement d'un navigateur GPS.",
         "equipments": [
-            "Gestion du responsive (Desktop, tablette et mobile)",
-            "Intégrer du contenu conformément à une maquette"
+            "Mobile first",
+            "Gestion et affichage des données",
+            "Intégration d'un dark mode"
         ],
         "tags": [
-            "HTML",
-            "CSS",
+            "MobileFisrt",
+            "JavaScript",
             "Responsive"
         ]
     },

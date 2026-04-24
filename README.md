@@ -5,13 +5,13 @@
 
 Projet de création de portfolio de développeur web personnel
 
-Contexte : Projet de formation (Openclassrooms)
+Contexte : Projet de portfolio pour présentation des compétences de développeur
 
 ## ✨ Fonctionnalités principales
 
 - Un page d'accueil de présentation
 - Présentation de projet sous forme de gallerie de "cards"
-- Formulaire de contacg
+- Formulaire de contacts
 
 
 ## 🖼️ Aperçu
@@ -47,6 +47,6 @@ Captures d'écran :
 
 ## 📝 Licence
 
-Projet personbel de portfolio de développeur web
+Projet personnel de portfolio de développeur web
 Non destiné à une utilisation en production.
 
